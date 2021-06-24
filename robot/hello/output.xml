@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210617 18:02:17.993" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\qaninja\robot\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas">
+<kw name="Welcome" library="app">
+<var>${result}</var>
+<arg>Fernando</arg>
+<msg timestamp="20210617 18:02:18.025" level="INFO">${result} = Olá Fernando , Bem vindo ao curso basico de robotframework!</msg>
+<status status="PASS" starttime="20210617 18:02:18.025" endtime="20210617 18:02:18.025"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Olá Fernando, Bem vindo ao curso basico de robotframework!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20210617 18:02:18.025" level="FAIL">Olá Fernando , Bem vindo ao curso basico de robotframework! != Olá Fernando, Bem vindo ao curso basico de robotframework!</msg>
+<status status="FAIL" starttime="20210617 18:02:18.025" endtime="20210617 18:02:18.025"/>
+</kw>
+<status status="FAIL" starttime="20210617 18:02:18.025" endtime="20210617 18:02:18.025">Olá Fernando , Bem vindo ao curso basico de robotframework! != Olá Fernando, Bem vindo ao curso basico de robotframework!</status>
+</test>
+<status status="FAIL" starttime="20210617 18:02:17.993" endtime="20210617 18:02:18.025"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
